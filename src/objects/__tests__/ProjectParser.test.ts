@@ -1,13 +1,8 @@
 import { assert, expect, test } from 'vitest'
 import { Project } from '../Project'
 import { Image } from '../Image'
-import { InvalidTypeError, MissingPropertyError, parseProject } from '../ProjectParser'
-
-function testMultipleCases<Type>(testDesc: string, testCases: Type[], testFn: (obj: Type) => void) {
-  testCases.forEach((testCase, index) => {
-    test(testDesc + ' (Test Index: ' + index + ')', () => testFn(testCase))
-  })
-}
+import { InvalidTypeError, parseProject } from '../ProjectParser'
+import { testMultipleCases } from './MultipleCaseTester'
 
 const TEST_PROJECTS = [
   new Project('TEST', 'test string', []),

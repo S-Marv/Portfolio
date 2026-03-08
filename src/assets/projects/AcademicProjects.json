@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Milky Way Market",
+    "description": "",
+    "images": [
+      { "source": "images/milkywayMarket/w.png", "altText": "W" },
+      { "source": "images/milkywayMarket/w.png", "altText": "F" }
+    ]
+  },
+  {
+    "name": "Indie Grown Games",
+    "description": "",
+    "images": []
+  },
+  {
+    "name": "MoneyTree Finquest",
+    "description": "",
+    "images": []
+  }
+]
