@@ -25,3 +25,11 @@ defineProps<{
     </template>
   </Galleria>
 </template>
+<style scoped>
+.p-galleria {
+  --p-galleria-border-width: 0px;
+  border-radius: 0;
+  --p-galleria-nav-button-background: rgba(0, 0, 0, 0.4);
+  --p-galleria-nav-button-hover-background: rgba(0, 0, 0, 0.75);
+}
+</style>

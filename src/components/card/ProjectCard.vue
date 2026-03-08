@@ -20,3 +20,8 @@ defineProps<{
     </template>
   </Card>
 </template>
+<style scoped>
+.p-card {
+  width: 375px;
+}
+</style>
