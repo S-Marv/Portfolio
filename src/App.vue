@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
+    <RouterLink to="/">Go to Home</RouterLink>
+    <RouterLink to="/formatter">Go to Formatter</RouterLink>
+    <RouterView />
   </main>
 </template>
 

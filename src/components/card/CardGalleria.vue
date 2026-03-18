@@ -25,6 +25,7 @@ defineProps<{
     </template>
   </Galleria>
 </template>
+
 <style scoped>
 .p-galleria {
   --p-galleria-border-width: 0px;
