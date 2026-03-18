@@ -23,5 +23,11 @@ defineProps<{
 <style scoped>
 .p-card {
   width: 375px;
+  --p-card-background:white;
+}
+@media (prefers-color-scheme: dark) {
+    .p-card{
+      --p-card-background:black;
+    }
 }
 </style>
