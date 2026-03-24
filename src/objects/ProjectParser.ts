@@ -1,5 +1,5 @@
-import type { Image } from './Image'
-import { Project } from './Project'
+import type { Image } from './data_structures/Image'
+import { Project } from './data_structures/Project'
 export { parseProject, MissingPropertyError, InvalidTypeError }
 
 function parseProject(jsonObj: Object) {

@@ -1,37 +1,50 @@
 <script setup lang="ts">
 
-import { Image } from '@/objects/Image';
-import { ref, type Ref } from 'vue';
+import { Image } from '@/objects/data_structures/Image';
+import { reactive, ref, type Ref } from 'vue';
 import Button from 'primevue/button';
-import { Project } from '@/objects/Project';
+import Select from 'primevue/select';
 
-const name = ref("")
-const description = ref("")
-const images :Ref<Image[], Image[]>= ref([])
-const output = ref("")
+import { Link } from '@/objects/data_structures/Link';
+import { Keys } from '@/assets/data/IconMap';
+import { Project } from '@/objects/data_structures/Project';
+
+const project = reactive(new Project("",""));
+const output=ref("");
 
 function addNewImage(){
-    images.value.push(new Image("",""))
+    project.images.push(new Image("",""));
+}
+
+function addNewLink(){
+    project.links.push(new Link("","",""));
 }
 
 function printOutput(){
-    const project = new Project(name.value, description.value, images.value)
-    output.value = JSON.stringify(project)
+    output.value = JSON.stringify(project);
 }
 
 </script>
 <template>
     <div class="horizontal">
         <div class="vertical">
-            Name: <input v-model="name"/>
-            Desrciption: <textarea v-model="description"/>
+            Name: <input v-model="project.name"/>
+            Desrciption: <textarea v-model="project.description"/>
             Images:
-            <div v-for="(image, index) in images" class="vertical image_box">
+            <div v-for="(image, index) in project.images" class="vertical list_box">
                 {{ index }}:
                 <div>Source: <input v-model="image.source"/> </div>
                 <div>AltText: <input v-model="image.altText"/> </div> 
             </div>
             <Button label="+" v-on:click="addNewImage"/>
+            Links:
+            <div v-for="(link, index) in project.links" class="vertical list_box">
+                {{ index }}:
+                <div>Text: <input v-model="link.text"/></div> 
+                <div>URL: <input v-model="link.url"/></div> 
+                <div>Icon: <Select v-model="link.iconId" :options="Keys"/></div>
+            </div>
+            <Button label="+" v-on:click="addNewLink"/>
         </div>
         <div class="vertical">
             <Button label="Print Output" v-on:click="printOutput"/>
@@ -52,7 +65,7 @@ function printOutput(){
     flex-direction: row;
 }
 
-.image_box{
+.list_box{
     padding: 5px;
 }
 </style>

@@ -1,9 +1,7 @@
-import AcademicProjectsJSON from '../assets/projects/AcademicProjects.json'
-import type { Project } from './Project'
-import { parseProject } from './ProjectParser'
+import AcademicProjectsJSON from '../assets/data/AcademicProjects.json'
+import type { Project } from './data_structures/Project'
 
-export class DataLoader {
-  public getAcademicProjects() {
-    return AcademicProjectsJSON as Project[]
-  }
-}
+
+const AcademicProjects = AcademicProjectsJSON as Project[];
+
+export {AcademicProjects}

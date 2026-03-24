@@ -1,6 +1,6 @@
 import { assert, expect, test } from 'vitest'
-import { Project } from '../Project'
-import { Image } from '../Image'
+import { Project } from '../data_structures/Project'
+import { Image } from '../data_structures/Image'
 import { InvalidTypeError, parseProject } from '../ProjectParser'
 import { testMultipleCases } from './MultipleCaseTester'
 

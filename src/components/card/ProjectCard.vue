@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import type { Project } from '@/objects/Project'
 import Card from 'primevue/card'
 import CardGalleria from './CardGalleria.vue'
+
+import { Project } from '@/objects/data_structures/Project';
+import LinkButton from './LinkButton.vue';
 defineProps<{
   project: Project
 }>()
+
 </script>
 
 <template>
@@ -16,7 +19,12 @@ defineProps<{
       <h1>{{ project.name }}</h1>
     </template>
     <template #content>
-      <div v-html="project.description" />
+      <div v-html="project.description"></div>
+    </template>
+    <template #footer>
+        <div class="flex gap-4 mt-1">
+          <LinkButton v-for="link in project.links" :link="link"/>
+        </div>
     </template>
   </Card>
 </template>
