@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Image } from '@/objects/Image'
+import type { Image } from '@/objects/data_structures/Image'
 import Galleria from 'primevue/galleria'
 defineProps<{
   images: Image[]
