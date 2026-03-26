@@ -1,0 +1,11 @@
+{
+    "name": "Milky Way Market",
+    "description": "",
+    "images": [
+      { "source": "images/milkywayMarket/w.png", "altText": "W" },
+      { "source": "images/milkywayMarket/w.png", "altText": "F" }
+    ],
+    "links":[
+      {"text":"hi", "iconId":"GITHUB", "url":"https://github.com/S-Marv/IndyGrownGames"}
+    ]
+}

@@ -1,10 +1,9 @@
 import { expect } from 'vitest'
-import { DataLoader } from '../DataLoader'
-import { parseProject } from '../ProjectParser'
+import { AcademicProjects } from '../DataLoader'
 import { testMultipleCases } from './MultipleCaseTester'
+import { Project } from '../data_structures/Project';
 
-const loader = new DataLoader()
-
-testMultipleCases('Test Academic projects', loader.getAcademicProjects(), (project) => {
-  expect(parseProject(project)).toBeDefined()
+testMultipleCases('Test Academic projects', AcademicProjects, (project) => {
+  expect(project instanceof Project).toBeTruthy();
 })
+
