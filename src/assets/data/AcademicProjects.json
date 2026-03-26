@@ -3,17 +3,24 @@
     "name": "Milky Way Market",
     "description": "",
     "images": [
-      { "source": "images/milkywayMarket/w.png", "altText": "W" },
-      { "source": "images/milkywayMarket/w.png", "altText": "F" }
+      { "source": "milkywayMarket/cow.png", "altText": "Our thumbnail for the itch page" },
+      { "source": "milkywayMarket/midgame.jpg", "altText": "The between round scoreboard, programmed and animated by me" },
+      { "source": "milkywayMarket/postgame.jpg", "altText": "The postgame scoreboard, also programmed and animated by me" }
     ],
     "links":[
-      {"text":"hi", "iconId":"GITHUB", "url":"https://github.com/S-Marv/IndyGrownGames"}
+      {"text":"Itch Page", "iconId":"ITCHIO", "url":"https://milkywaymarket.itch.io/milky-way-market"},
+      {"text":"Trailer", "iconId":"YOUTUBE", "url":"https://www.youtube.com/watch?v=5iVB6QLSZKQ"},
+      {"text":"Example", "iconId":"YOUTUBE", "url":"https://www.youtube.com/watch?v=g5Xmd0Qc_Wc"}
     ]
   },
   {
     "name": "Indie Grown Games",
     "description": "",
-    "images": []
+    "images": [],
+    "links":[
+      {"text":"Repository", "iconId":"GITHUB", "url":"https://github.com/S-Marv/IndyGrownGames"},
+      {"text":"Protoype Page", "iconId":"GITHUB", "url":"https://s-marv.github.io/IndyGrownGames/"}
+    ]
   },
   {
     "name": "MoneyTree Finquest",

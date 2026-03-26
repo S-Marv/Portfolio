@@ -24,8 +24,4 @@ h1 {
   display: flex;
   flex-flow: row wrap;
 }
-
-.project-box > div {
-  margin: 10px 15px;
-}
 </style>

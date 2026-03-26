@@ -1,9 +1,9 @@
 import { MissingPropertyError } from "./Errors";
 
 export class Image {
-  static copy(source: any) {
-    if(!(source.source && source.altText)) throw new MissingPropertyError(source.source === undefined? "source" : "altText" );
-    return new Image(source.source, source.altText);
+  static copy(obj: any) {
+    MissingPropertyError.assertPropsAreDefined([obj.source, obj.altText], ["source", "altText"]);
+    return new Image(obj.source, obj.altText);
   }
 
 

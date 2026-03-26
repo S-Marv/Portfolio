@@ -15,7 +15,7 @@ const Icons :Icon[]= [
     make("GITHUB", "github.png", "#1a237e"),
     make("YOUTUBE", "youtube.png", "#B2071D"),
     make("LINKEDIN", "linkedin.jpg", "#0a66c2"),
-    make("ITCHIO", "itchio.png", "#fe2247")
+    make("ITCHIO", "itchio.png", "#B2071D")
 ];
 
 export { IconIdMap, Keys, Icons }

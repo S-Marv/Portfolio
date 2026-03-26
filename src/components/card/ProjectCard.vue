@@ -31,11 +31,14 @@ defineProps<{
 <style scoped>
 .p-card {
   width: 375px;
-  --p-card-background:white;
+  --p-card-background:lightgrey;
+  margin: 10px;
+  border: 2px solid black;
 }
 @media (prefers-color-scheme: dark) {
     .p-card{
-      --p-card-background:black;
+      --p-card-background:rgb(31, 31, 31);
+      border-color: rgb(65, 65, 65);
     }
 }
 </style>
