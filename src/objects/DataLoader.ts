@@ -1,7 +1,7 @@
 import AcademicProjectsJSON from '../assets/data/AcademicProjects.json'
-import type { Project } from './data_structures/Project'
+import { Project } from './data_structures/Project'
 
 
-const AcademicProjects = AcademicProjectsJSON as Project[];
+const AcademicProjects = AcademicProjectsJSON.map(Project.parse);
 
 export {AcademicProjects}

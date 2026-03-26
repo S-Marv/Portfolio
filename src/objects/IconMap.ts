@@ -12,10 +12,10 @@ function make(id:string, imageName:string, color:string){
 }
 
 const Icons :Icon[]= [
-    make("GITHUB", "github_white.png", "#1a237e"),
+    make("GITHUB", "github.png", "#1a237e"),
     make("YOUTUBE", "youtube.png", "#B2071D"),
     make("LINKEDIN", "linkedin.jpg", "#0a66c2"),
-    make("ITCHIO", "itchio_white.png", "#fe2247")
+    make("ITCHIO", "itchio.png", "#fe2247")
 ];
 
 export { IconIdMap, Keys, Icons }

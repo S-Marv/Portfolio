@@ -2,7 +2,7 @@
 import { Button, Image } from 'primevue';
 
 import type { Link } from '@/objects/data_structures/Link';
-import { IconIdMap } from '@/assets/data/IconMap';
+import { IconIdMap } from '@/objects/IconMap';
 
 const {link} = defineProps<{link:Link}>();
 const icon = IconIdMap.get(link.iconId);

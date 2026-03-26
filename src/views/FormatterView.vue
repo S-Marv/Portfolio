@@ -6,7 +6,7 @@ import Button from 'primevue/button';
 import Select from 'primevue/select';
 
 import { Link } from '@/objects/data_structures/Link';
-import { Keys } from '@/assets/data/IconMap';
+import { Keys } from '@/objects/IconMap';
 import { Project } from '@/objects/data_structures/Project';
 
 const project = reactive(new Project("",""));
