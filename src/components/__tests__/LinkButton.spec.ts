@@ -3,7 +3,6 @@ import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import LinkButton from '../card/LinkButton.vue'
 import { Link } from '@/objects/data_structures/Link'
-import { Button } from 'primevue'
 
 describe('LinkButton', () => {
   it('renders properly', () => {
