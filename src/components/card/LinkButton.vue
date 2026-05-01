@@ -9,7 +9,7 @@ const icon = IconIdMap.get(link.iconId);
 </script>
 <template>
     <Button as="a" :href="link.url" target="_blank" rel="noopener noreferrer" :style="'background:' + icon?.backgroundColor">
-        {{ link.text }}
+        <p v-if="link.text">{{ link.text }}</p>
         <img :src="icon?.url" style="height:30px; width: 30px;"/>
     </Button>
 </template>

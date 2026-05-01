@@ -6,11 +6,11 @@ export class Link{
         return new Link(source.text, source.iconId, source.url)
     }
     
-    text:string;
+    text:string|null;
     iconId:string;
     url:string;
 
-    constructor(text:string, iconId:string, url:string){
+    constructor(text:string|null, iconId:string, url:string){
         this.text = text;
         this.iconId = iconId;
         this.url = url;

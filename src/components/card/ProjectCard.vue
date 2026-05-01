@@ -16,13 +16,13 @@ defineProps<{
       <CardGalleria :images="project.images" />
     </template>
     <template #title>
-      <h1>{{ project.name }}</h1>
+      <h2>{{ project.name }}</h2>
     </template>
     <template #content>
       <div v-html="project.description"></div>
     </template>
     <template #footer>
-        <div class="flex gap-4 mt-1">
+        <div>
           <LinkButton v-for="link in project.links" :link="link"/>
         </div>
     </template>
@@ -31,8 +31,7 @@ defineProps<{
 <style scoped>
 .p-card {
   width: 375px;
-  --p-card-background:lightgrey;
-  margin: 10px;
+  --p-card-background:var(--vt-c-white);
   border: 2px solid black;
 }
 @media (prefers-color-scheme: dark) {
