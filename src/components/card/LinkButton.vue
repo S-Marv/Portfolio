@@ -10,7 +10,7 @@ const icon = IconIdMap.get(link.iconId);
 <template>
     <Button as="a" :href="link.url" target="_blank" rel="noopener noreferrer" :style="'background:' + icon?.backgroundColor">
         <p v-if="link.text">{{ link.text }}</p>
-        <img v-if="icon!=NONE" :src="icon?.url" style="height:30px; width: 30px;"/>
+        <img v-if="icon!=NONE" :src="icon?.url" style="height:30px; width: 30px;" data-test="icon"/>
     </Button>
 </template>
 <style lang="css" scoped>
