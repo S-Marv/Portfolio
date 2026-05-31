@@ -19,7 +19,7 @@ defineProps<{
       <h2>{{ project.name }}</h2>
     </template>
     <template #content>
-      <div v-html="project.description"></div>
+      <div v-html="project.description" class="description"></div>
     </template>
     <template #footer>
         <div>
@@ -28,10 +28,16 @@ defineProps<{
     </template>
   </Card>
 </template>
-<style scoped>
+<style>
+
+.description p{
+  padding-bottom: 5px;
+}
+
 .p-card {
   width: 375px;
   --p-card-background:var(--vt-c-white);
+  text-align: center;
   border: 2px solid black;
 }
 @media (prefers-color-scheme: dark) {

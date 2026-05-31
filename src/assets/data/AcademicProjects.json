@@ -1,7 +1,7 @@
 [
   {
     "name": "Milky Way Market",
-    "description": "",
+    "description": "Our senior project, Milky Way Market is a party game developed in Unreal Engine 5 by a 14-person team. While I contributed to most of the systems in the game, including testing and enemy programming, my most evident contribution in the finished game was programming and animating the scoreboards, as shown in the example link below.",
     "images": [
       { "source": "milkywayMarket/cow.png", "altText": "Our thumbnail for the itch page" },
       { "source": "milkywayMarket/midgame.jpg", "altText": "The between round scoreboard, programmed and animated by me" },
@@ -15,8 +15,8 @@
   },
   {
     "name": "Indie Grown Games",
-    "description": "",
-    "images": [],
+    "description": "<p>Indy Grown Games is a site developed for Professor Travis Faas at BSU by I and three other students. We utilized Vue and Javascript to create a frontend prototype design that the professor indicated that he would replace his old website with. As it is a prototype, there is still placeholder content, but the main layout is there.</p><p>In addition to assisting in the overall design, I programmed everything besides the menu button in the top right and the calendar at the bottom of the main page.</p><p>The prototype is hosted on github pages.",
+    "images": [{"source":"igg/IGG.jpg","altText":"The main page of the site."}],
     "links":[
       {"text":"Repository", "iconId":"GITHUB", "url":"https://github.com/S-Marv/IndyGrownGames"},
       {"text":"Protoype Page", "iconId":"GITHUB", "url":"https://s-marv.github.io/IndyGrownGames/"}
@@ -24,7 +24,8 @@
   },
   {
     "name": "MoneyTree Finquest",
-    "description": "",
-    "images": []
+    "description":"<p>For my senior project at BSU, our professor had my group develop a site for the finance company Moneytree (moneytree.com). The site, Finquest, was designed to make financial advisors’ job of collecting information from possible clients quicker. While most of my time was spent as the sole developer of the .Net backend, I did contribute to the Vue.js frontend as well.</p>\n<p>Due to NDA, I am not showing code from the project.</p>",
+    "images":[{"source":"finquest/address.jpg","altText":""},{"source":"finquest/income.jpg","altText":""}],
+    "links":[]
   }
 ]

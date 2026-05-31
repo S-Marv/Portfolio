@@ -5,7 +5,7 @@ const IconIdMap = new Map<string, Icon>();
 const Keys :string[] = [];
 const Icons :Icon[]= []
 
-function make(id:string, imageName:string, color:string){
+function make(id:string, imageName:string|null, color:string){
     const icon = new Icon(id, BASE_URL + imageName, color);
     Keys.push(id);
     IconIdMap.set(id, icon);
@@ -17,5 +17,6 @@ const GITHUB = make("GITHUB", "github.png", "#1a237e");
 const YOUTUBE = make("YOUTUBE", "youtube.png", "#B2071D");
 const ITCHIO = make("ITCHIO", "itchio.png", "#B2071D");
 const LINKEDIN =  make("LINKEDIN", "linkedin.jpg", "#0a66c2");
+const NONE = make("NONE", "", "#0a66c2")
 
-export { IconIdMap, Keys, Icons, GITHUB, YOUTUBE, ITCHIO, LINKEDIN}
+export { IconIdMap, Keys, Icons, GITHUB, YOUTUBE, ITCHIO, LINKEDIN, NONE}
