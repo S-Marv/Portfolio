@@ -1,0 +1,26 @@
+[
+  {
+    "name":"This Portfolio",
+    "description":"I built this portfolio site using Vue.js for JavaScript. I also made a formatter to make entering this data easier, as shown above.",
+    "images":[{"source":"portfolio/formatter.png","altText":""}],
+    "links":[{"text":"GitHub Repo","iconId":"GITHUB","url":"https://github.com/S-Marv/Portfolio"},{"text":"Formatter","iconId":"GITHUB","url":"/Portfolio/formatter"}]
+  },
+  {
+    "name":"GM Tabs",
+    "description":"I often play tabletop rpgs like D&D online with friends and they’ve complained about having limited screen space. To address this, I began developing GMTabs. The program allows the user to add “Tabs”, similar to a normal browser, but with custom icons and keybinds. This way, the game master can efficiently organize and navigate their screen space.\nOriginally developed in JavaFx, the slow speed of the WebView component has lead me to consider switching to either the Java Swing library or recreating the project in another language like C++.",
+    "images":[{"source":"gmtabs/example.jpg","altText":"Example app set up"}],
+    "links":[{"text":"GitHub Repo","iconId":"GITHUB","url":"https://github.com/S-Marv/GMTabs"}]
+  },
+  {
+    "name":"Snatch 'n' Sniff",
+    "description":"Made for Global Game Jam 2024, it is a short game developed in the Godot Game Engine.\nGlobal Game Jam is a yearly challenge to develop a game within a single weekend. I was joined by 5 other developers to make a game that matched the year’s theme, “Make me laugh”, and I believe we succeeded.",
+    "images":[{"source":"snatchnsniff/wizard.jpg","altText":"A screenshot from the game. "}],
+    "links":[{"text":"Global Game Jam Listing","iconId":"NONE","url":"https://globalgamejam.org/games/2024/snatch-n-sniff-3"}]
+  },
+  {
+    "name":"GM Aide App",
+    "description":"I built this application a year ago when I started my first D&D campaign using JavaFX. It assists me in tracking dates and rolling monster loot. Weather is generated using the date as an rng seed, so there is no need to store it afterward.",
+    "images":[{"source":"gmaide/example.jpg","altText":""}],
+    "links":[{"text":"GitHub Repo","iconId":"GITHUB","url":"https://github.com/S-Marv/GM-Aid"}]
+  }
+]

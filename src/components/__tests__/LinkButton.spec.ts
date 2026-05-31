@@ -8,6 +8,6 @@ describe('LinkButton', () => {
   it('renders properly', () => {
     const wrapper = mount(LinkButton, { props: { link: new Link("testText", "GITHUB", "github.com") } })
     expect(wrapper.text()).toContain('testText')
-    expect(wrapper.findComponent(Image).html()).toContain("icons/github.png")
+    expect(wrapper.get('[data-test="icon"]').attributes().src).toBe("icons/github.png")
   })
 })

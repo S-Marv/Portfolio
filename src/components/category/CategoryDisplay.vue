@@ -9,23 +9,23 @@ defineProps<{
 }>()
 </script>
 <template>
-  <h1>{{ name }}</h1>
-  <p>{{ description }}</p>
-  <div class="project-box">
-    <ProjectCard v-for="project in projects" :project="project" class="card" />
+  <div class="category">
+    <h1>{{ name }}</h1>
+    <p>{{ description }}</p>
+    <div class="project-box">
+      <ProjectCard v-for="project in projects" :project="project" class="card" />
+    </div>
   </div>
 </template>
 <style scoped>
 h1 {
-  margin: 0 0 0 10px;
+  margin-left: 1rem;
 }
 
 .project-box {
   display: flex;
   flex-flow: row wrap;
-}
-
-.project-box > div {
-  margin: 10px 15px;
+  gap: 20px;
+  margin-top: 10px;
 }
 </style>

@@ -2,18 +2,16 @@
 import { Button, Image } from 'primevue';
 
 import type { Link } from '@/objects/data_structures/Link';
-import { IconIdMap } from '@/objects/IconMap';
+import { IconIdMap, NONE } from '@/objects/IconMap';
 
 const {link} = defineProps<{link:Link}>();
 const icon = IconIdMap.get(link.iconId);
 </script>
 <template>
-    <a :href="link.url" target="_blank" rel="noopener noreferrer">
-        <Button :style="'background:' + icon?.backgroundColor">
-            {{ link.text }}
-            <Image :src="icon?.url" width="30"/>
-        </Button>
-    </a>
+    <Button as="a" :href="link.url" target="_blank" rel="noopener noreferrer" :style="'background:' + icon?.backgroundColor">
+        <p v-if="link.text">{{ link.text }}</p>
+        <img v-if="icon!=NONE" :src="icon?.url" style="height:30px; width: 30px;" data-test="icon"/>
+    </Button>
 </template>
 <style lang="css" scoped>
 
@@ -22,6 +20,18 @@ const icon = IconIdMap.get(link.iconId);
     --p-button-primary-hover-color: var(--p-button-primary-color);
     --p-button-primary-active-color:var(--p-button-primary-color);
     --p-button-primary-focus-ring-color: transparent;
+    --p-button-primary-border-color: rgba(119, 119, 119, 0.5);
+    --p-button-primary-hover-border-color: var(--p-button-primary-border-color);
+    font-size: 18px;
+    margin: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .p-button{
+        --p-button-primary-border-color: rgba(119, 119, 119, 0.5);
+        --p-button-primary-hover-border-color: var(--p-button-primary-border-color);
+    }
+   
 }
 
 </style>
