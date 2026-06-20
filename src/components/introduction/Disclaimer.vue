@@ -5,7 +5,7 @@
     <div class="disclaimer">
         <h3>Disclaimer</h3>
         <p>
-            I have <u>never</u> used generative AI for software development and avoid it in all other fields. I find it inaccurate and not worth the ethical and environmental costs. I like programming and would much rather learn from my own mistakes than offload the intellectual burden to genAI.
+            I have never used generative AI for software development and try to avoid it in other fields. I find it inaccurate and unsustainable long-term.
         </p>
     </div>
 </template>

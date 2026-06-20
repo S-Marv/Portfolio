@@ -40,6 +40,20 @@ defineProps<{
   text-align: center;
   border: 2px solid black;
 }
+
+.p-card-body {
+ flex-grow: 1;
+ align-items: center;
+ padding-top: 0px !important;
+}
+
+.p-card-footer{
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+
 @media (prefers-color-scheme: dark) {
     .p-card{
       --p-card-background:rgb(31, 31, 31);
