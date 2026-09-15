@@ -9,7 +9,7 @@
     "name":"GM Tabs",
     "description":"I often play tabletop rpgs like D&D online with friends and they’ve complained about having limited screen space. To address this, I began developing GMTabs. The program allows the user to add “Tabs”, similar to a normal browser, but with custom icons and keybinds. This way, the game master can efficiently organize and navigate their screen space.\nOriginally developed in JavaFx, the slow speed of the WebView component has lead me to consider switching to either the Java Swing library or recreating the project in another language like C++.",
     "images":[{"source":"gmtabs/example.jpg","altText":"Example app set up"}],
-    "links":[{"text":"GitHub Repo","iconId":"GITHUB","url":"https://github.com/S-Marv/GMTabs"}]
+    "links":[{"text":"GitHub Repo","iconId":"GITHUB","url":"https://github.com/S-Marv/GMTabs"}, {"text":"Releases", "iconId":"GITHUB","url":"https://github.com/S-Marv/GMTabs/releases"}]
   },
   {
     "name":"Snatch 'n' Sniff",
