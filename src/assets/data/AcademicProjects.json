@@ -1,7 +1,7 @@
 [
   {
     "name": "Milky Way Market",
-    "description": "Our senior project, Milky Way Market is a party game developed in Unreal Engine 5 by a 14-person team. While I contributed to most of the systems in the game, including testing and enemy programming, my most evident contribution in the finished game was programming and animating the scoreboards, as shown in the example link below.",
+    "description": "One of my senior projects, Milky Way Market is a party game developed in Unreal Engine 5 by a 14-person team. While I contributed to most of the systems in the game, including testing and enemy programming, my most evident contribution in the finished game was programming and animating the scoreboards, as shown in the example link below.",
     "images": [
       { "source": "milkywayMarket/cow.png", "altText": "Our thumbnail for the itch page" },
       { "source": "milkywayMarket/midgame.jpg", "altText": "The between round scoreboard, programmed and animated by me" },
@@ -24,7 +24,7 @@
   },
   {
     "name": "MoneyTree Finquest",
-    "description":"<p>For my senior project at BSU, our professor had my group develop a site for the finance company Moneytree (moneytree.com). The site, Finquest, was designed to make financial advisors’ job of collecting information from possible clients quicker. While most of my time was spent as the sole developer of the .Net backend, I did contribute to the Vue.js frontend as well.</p>\n<p>Due to NDA, I am not showing code from the project.</p>",
+    "description":"<p>One of my senior projects at BSU, our professor had my group develop a site for the finance company Moneytree (moneytree.com). The site, Finquest, was designed to make financial advisors’ job of collecting information from possible clients quicker. While most of my time was spent as the sole developer of the .Net backend, I did contribute to the Vue.js frontend as well.</p>\n<p>Due to NDA, I am not showing code from the project.</p>",
     "images":[{"source":"finquest/address.jpg","altText":""},{"source":"finquest/income.jpg","altText":""}],
     "links":[]
   }
